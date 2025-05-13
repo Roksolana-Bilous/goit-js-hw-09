@@ -3,9 +3,9 @@ let formData = {
   message: '',
 };
 
-const inputForm = document.querySelector('.fb-form');
+const inputForm = document.querySelector('feedback-form');
 if (localStorage.length !== 0) {
-  formData = JSON.parse(localStorage.getItem('fb-form-state'));
+  formData = JSON.parse(localStorage.getItem('feedback-form-state'));
   inputForm.email.value = formData.email;
   inputForm.message.value = formData.message;
 }
@@ -13,7 +13,7 @@ if (localStorage.length !== 0) {
 inputForm.addEventListener('input', () => {
   formData.email = inputForm.email.value.trim();
   formData.message = inputForm.message.value.trim();
-  localStorage.setItem('fb-form-state', JSON.stringify(formData));
+  localStorage.setItem('feedback-form-state', JSON.stringify(formData));
 });
 
 //Submit
@@ -25,7 +25,7 @@ inputForm.addEventListener('submit', e => {
     for (const key in formData) {
       delete formData[key];
     }
-    localStorage.removeItem('fb-form-state');
+    localStorage.removeItem('feedback-form-state');
     return;
   } else {
     return alert('Fill please all fields');
