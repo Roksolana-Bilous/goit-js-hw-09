@@ -1,4 +1,4 @@
-.fb-form {
+.feedback-form {
     display: flex;
     flex-direction: column;
     width: 408px;
@@ -6,7 +6,7 @@
     padding: 24px;
 }
 
-.fb-form textarea {
+.feedback-form textarea {
     border: 1px solid #808080;
     border-radius: 4px;
     font-weight: 400;
@@ -18,13 +18,13 @@
     padding: 8px 16px;
 }
 
-.fb-form label {
+.feedback-form label {
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
 
-.fb-form input {
+.feedback-form input {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
@@ -33,7 +33,7 @@
     padding: 8px 16px;
 }
 
-.fb-form button {
+.feedback-form button {
     border-radius: 8px;
     padding: 8px 16px;
     width: 86px;
@@ -49,7 +49,7 @@
     margin-top: 8px;
 }
 
-.fb-form button:hover,
-.fb-form button:focus {
+.feedback-form button:hover,
+.feedback-form:focus {
     background-color: #6c8cff;
 }
