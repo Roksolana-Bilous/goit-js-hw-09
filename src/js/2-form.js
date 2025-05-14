@@ -10,7 +10,7 @@ if (savedData) {
   formData = JSON.parse(savedData);
   inputForm.elements.email.value = formData.email;
   inputForm.elements.message.value = formData.message;
-}
+};
 
 inputForm.addEventListener('input', () => {
   formData.email = inputForm.elements.email.value.trim();
